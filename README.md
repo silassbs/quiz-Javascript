@@ -12,6 +12,7 @@ Projeto construído na intenção de praticar a manipulação do DOM, Git, Githu
 - CSS
 - Javascript
 
+Disponível online através do link:  https://silassbs.github.io/quiz-javascript/
 
 Captura de Tela:
 ![Git e Github](https://i.imgur.com/hb1zKCC.png "Git e Github")
