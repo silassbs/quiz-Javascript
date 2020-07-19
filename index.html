@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <h1>Pontuação: 0</h1>
+        </div>
+        <div class="box" id="box0">
+            <h2>Vamos começar?</h2>
+            
+            <h3>Teste de conhecimento em CSS.</h3>
+            <h4>Vamos teste seu conhecimento. Mas não se preocupe, se você não ir bem, ainda terá outras chances :)</h4>
+            
+            <button onclick="nextQuestion()" class="next">Let's go</button>
+        </div>
+        <div class="box hidden" id="box1">
+            <h3>Git e Github</h3>
+            <h2>Qual a funcionalidade do comando<code> git status</code> ?</h2>
+            <ul class="options">
+                <li><button onclick="teste(this.id)" id="1" class="buttons">Lista todas as alterações feitas no repositório</button></li>
+                
+                <li><button onclick="teste(this.id)" id="2" class="buttons">Retorna a situação atual do repositório</button><li></li>
+                <li><button onclick="teste(this.id)" id="3" class="buttons">Inicializa um repositório</button></li>
+                <li><button onclick="teste(this.id)" id="4" class="buttons">Faz um commit</button></li>
+            </ul>
+            <button onclick="nextQuestion()" class="next">Próxima 1</button>
+        </div>
+        <div class="box hidden" id="box2">
+            <h3>Git e Github</h3>
+            <h2>Qual comando do git faz um download do seu repositório remoto do seu Github para seu computador?</h2>
+            <ul class="options">
+                <li><button onclick="teste(this.id)" id="5" class="buttons"><code>git push</code> </button></li>
+                <li><button onclick="teste(this.id)" id="6" class="buttons"><code>git status</code></button></li>
+                <li><button onclick="teste(this.id)" id="7" class="buttons"><code>git clone</code></button></li>
+                <li><button onclick="teste(this.id)" id="8" class="buttons"><code>git commit</code></button></li>
+            </ul>
+            <button onclick="nextQuestion()" class="next" >Próxima 2</button>
+        </div>
+
+        <div class="box hidden" id="box3">
+            <h3>Git e Github</h3>
+            <h2>Como criar uma mensagem para um commit?</h2>
+            <ul class="options">
+                <li><button onclick="teste(this.id)" id="10" class="buttons"><code>git message "alterações feitas"</code></button></li>
+                <li><button onclick="teste(this.id)" id="11" class="buttons"><code>git add "alterações feitas"</code></button></li>
+                <li><button onclick="teste(this.id)" id="12" class="buttons"><code>git commit "alterações feitas"</code></button></li>
+                <li><button onclick="teste(this.id)" id="13" class="buttons"><code>git commit -m "alterações feitas"</code></button></li>
+            </ul>
+            <button onclick="nextQuestion()" class="next" >Próxima 3</button>
+        </div>
+
+        <div class="box hidden" id="box4">
+            <h3>Git e Github</h3>
+            <h2>Qual a funcionalidade do comando<code> git checkout -b "nome-da-branch"</code> ?</h2>
+            <ul class="options">
+                <li><button onclick="teste(this.id)" id="14" class="buttons">Cria uma nova branch e entra nela</button></li>
+                <li><button onclick="teste(this.id)" id="15" class="buttons">Cria uma branch</button></li>
+                <li><button onclick="teste(this.id)" id="16" class="buttons">Cria uma pasta e entra nela</button></li>
+                <li><button onclick="teste(this.id)" id="17" class="buttons">Nenhuma das alternativas</button></li>
+            </ul>
+            <button onclick="nextQuestion()" class="next" >Próxima 4</button>
+        </div>
+        <div class="box hidden" id="box5">
+            <h3>Git e Github</h3>
+            <h2>Qual a funcionalidade do comando<code> git log</code> ?</h2>
+            <ul class="options">
+                <li><button onclick="teste(this.id)" id="18" class="buttons">Nenhuma das alternativas</button></li>
+                <li><button onclick="teste(this.id)" id="19" class="buttons">Lista todas as alterações feitas no repositório</button></li>
+                <li><button onclick="teste(this.id)" id="20" class="buttons">retorna o usuário que está logado</button></li>
+                <li><button onclick="teste(this.id)" id="21" class="buttons">Retorna a situação atual do repositório</button></li>
+            </ul>
+            <button onclick="nextQuestion()" class="next" >Próxima 4</button>
+        </div>
+
+        <div class="box hidden final_score" id="box6">
+            <h2>Sua pontuação foi: </h2>
+            
+            <h3>Parabéns por ter chegado até o final. Continue praticando independente do seu resultado :)</h3>
+            
+            <button class="next" onclick="location.reload()">Refazer</button>
+        </div>
+    </div>
+
+</body>
+</html>
